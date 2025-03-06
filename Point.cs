@@ -52,5 +52,9 @@ namespace prac26._2
         {
             Console.WriteLine($"x={GetX()},y={GetY()}");
         }
+        public void Printar()
+        {
+            Console.WriteLine($"x={X},y={Y}");
+        }
     }
 }
