@@ -10,12 +10,12 @@ namespace prac26._2
     {
         static void Main(string[] args)
         {
-            Point point1 = new Point(2.1, 3.2);
-            point1.Print();
-            point1.SetX(1.2);
-            point1.SetY(2.3);
-            Console.WriteLine("Обновленно значение X,Y");
-            point1.Print();
+            //Point point1 = new Point(2.1, 3.2);
+            //point1.Print();
+            //point1.SetX(1.2);
+            //point1.SetY(2.3);
+            //Console.WriteLine("Обновленно значение X,Y");
+            //point1.Print();
 
             //    Point[] points = new Point[4]{
             //    new Point(3,2),
@@ -36,7 +36,7 @@ namespace prac26._2
             //    double y = Convert.ToDouble(Console.ReadLine());
             //    points[i] = new Point(x, y);
             //}
-
+            //prac27 num3
             List<Point> points = new List<Point>();
             for (int i = 0; i < 4; i++)
             {
@@ -46,8 +46,10 @@ namespace prac26._2
                 int y = Convert.ToInt32(Console.ReadLine());
                 points.Add(new Point(x, y));
                 points[i].Printar();
+                points[i].Checking(x, y);
             }
-
+            Console.WriteLine($"Всего точек - {Point.count}");
+            
                 Console.ReadKey();
         }
     }
